@@ -1,1 +1,33 @@
+#Solutions to Exercise 3: Switches
 
+Exercise 1:
+
+This is very similar to switching a LED on or off. Again a single GPIO line is used. This time however the pin in programmed as input and we can add a pullup or pulldown resistor:
+
+_PB_PIN = 17 pushButton = Pin(_PB_PIN,Pin.IN,Pin.PULL_UP)
+
+Once the pushButton pin is defined we can get its current state with:
+
+state = pushButton.value()
+
+See pbPoll.py
+
+Exercise 2:
+
+The MicroPython documentation includes a chapter on writing interrupt service routines http://docs.micropython.org/en/latest/reference/isr_rules.html
+
+How to do this with GPIO lines is described in http://docs.micropython.org/en/latest/esp8266/tutorial/pins.html
+
+When using interrupts you may run into problems with bouncing of mechanical switches. The transition is not a single clear cut step function but may flip back and forth. Have a look at http://docs.micropython.org/en/latest/pyboard/tutorial/debounce.html for an explanation on how to eliminate this problem (software debounce algorithm).
+
+See pbInterrupt.py
+
+Exercise 3:
+
+Nothing much to be said here. Have a look at the solution pbIntLED.py
+
+Exercise 4:
+
+There is no difference in programming between a mechanical and a PIR switch. Just the GPIO line on which the switch is connected must be adapted.
+
+See pirPoll.p
