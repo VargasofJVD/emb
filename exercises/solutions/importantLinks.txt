@@ -25,3 +25,6 @@ QMC5883 is also for positional sensing and motion satbility -----magnetometer
 
 
 LED toogling, Neopixel codes found in Solutions Exercise 22 - led_test.py
+SHT30 series implementation found in Exercise 5
+#NB: dht11 and sht30 series measures temp/humidity but SHT gives higher range and better precision than dht.
+GPS implementation at Solutions Exercise 6
