@@ -22,3 +22,6 @@ ________________________________________________________________________________
 -------------------------------------------------------------------------------------
 
 QMC5883 is also for positional sensing and motion satbility -----magnetometer
+
+
+LED toogling, Neopixel codes found in Solutions Exercise 22 - led_test.py
