@@ -21,6 +21,6 @@ try:
         led.off()
         time.sleep(0.5)
 except KeyboardInterrupt:
-    print("Ctrl C seen! Switching LED off")
+    print("Tnterupt from the keyboard detected. Switching LED off")
     led.off()
     sys.exit(0)
